@@ -1,15 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Baby Predictions`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Hussain and Naadirah`,
+      summary: `are super excited to welcome their little bundle of joy into the world, but we want your help figuring out just what this baby will be.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A serverless web page to get my friend's prediction of our baby.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
   },
   plugins: [
     `gatsby-plugin-image`,
