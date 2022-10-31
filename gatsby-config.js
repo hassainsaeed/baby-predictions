@@ -3,7 +3,7 @@ module.exports = {
     title: `Baby Predictions`,
     author: {
       name: `Hussain and Naadirah`,
-      summary: `are super excited to welcome their little bundle of joy into the world, but we want your help figuring out just what this baby will be.`,
+      summary: `are super excited to welcome their little bundle of joy into the world. We want to use this website to share our baby registry and run a contest where you can help figure out just what this baby will be.`,
     },
     description: `A serverless web page to get my friend's prediction of our baby.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,

@@ -5,21 +5,59 @@ import Layout from "../components/layout"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = `Baby Predictions`
+  const babyRegistryURI= `https://www.babylist.com/baby-naadirah`
+  const babyRegistryTitle = `Baby Registry`
+  const babyRegistryDescription = `Click here for our baby gift registry. While a gift is appreciated, it is not necessary. Baby just needs your love and duas!`
+  const babyContestURI = ``
+  const babyContestTitle = ``
+  const babyContestDescription = ``
+
 
     return (
       <Layout location={location} title={siteTitle}>
         <Bio />
-        <p>
-          Baby Saeed is due Feb 23! 
-        </p>
-        <p>
-          So let's see who can predict their gender, weight, birthday and time with the most accuracy.
-        </p>
-        <p>
-          Whoever guesses correctly, may be gifted with a special surprise once Baby arrives!
-        </p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3pNQT8m-45S3rjPqlH9rXiNHlq60Xt0M6zPZQSxnE9hmuwg/viewform?embedded=true" 
-        width="640" height="1402" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <article
+          className="post-list-item"
+          itemScope
+          itemType="http://schema.org/Article"
+        >
+          <header>
+            <h2>
+              <a href={babyRegistryURI} target="_blank" rel="noopener noreferrer">
+                <span itemProp="headline">{babyRegistryTitle}</span>
+              </a>
+            </h2>
+          </header>
+          <section>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: babyRegistryDescription,
+              }}
+              itemProp="description"
+            />
+          </section>
+        </article>
+        <article
+          className="post-list-item"
+          itemScope
+          itemType="http://schema.org/Article"
+        >
+          <header>
+            <h2>
+              <a href={babyContestURI} target="_blank" rel="noopener noreferrer">
+                <span itemProp="headline">{babyContestTitle}</span>
+              </a>
+            </h2>
+          </header>
+          <section>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: babyContestDescription,
+              }}
+              itemProp="description"
+            />
+          </section>
+        </article>
       </Layout>
     )
 
