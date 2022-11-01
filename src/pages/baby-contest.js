@@ -1,6 +1,5 @@
 import * as React from "react"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 
 const BabyContest = ({ data, location }) => {
@@ -8,7 +7,6 @@ const BabyContest = ({ data, location }) => {
 
     return (
       <Layout location={location} title={siteTitle}>
-        <Bio />
         <p>
           Baby Saeed is due February 2023! 
         </p>

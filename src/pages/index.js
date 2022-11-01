@@ -4,13 +4,13 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = `Baby Predictions`
+  const siteTitle = `Hussain & Naadi's Baby`
   const babyRegistryURI= `https://www.babylist.com/baby-naadirah`
   const babyRegistryTitle = `Baby Registry`
   const babyRegistryDescription = `Click here for our baby gift registry. While a gift is appreciated, it is not necessary. Baby just needs your love and duas!`
-  const babyContestURI = ``
-  const babyContestTitle = ``
-  const babyContestDescription = ``
+  const babyContestURI = `/baby-contest`
+  const babyContestTitle = `Baby Predictions Contest`
+  const babyContestDescription = `Play a contest to see who can predict their gender, weight, birthday and time with the most accuracy. Whoever is the closest may be gifted a special surprise!`
 
 
     return (
