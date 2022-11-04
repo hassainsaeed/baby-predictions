@@ -4,7 +4,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const babyContest = path.resolve(`./src/pages/baby-contest.js`)
-  const path_slug = `baby-contest`
+  const path_slug = `/babycontest`
 
   createPage({
     path: path_slug,
